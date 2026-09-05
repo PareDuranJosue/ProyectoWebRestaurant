@@ -1,0 +1,368 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Sep 4, 2026, 9:55:15 PM
+    Author     : josue
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f4f0;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #8B1A1A;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header .logo p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* ===== NAV ===== */
+nav {
+    background: #A52A2A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #D2691E;
+    border-radius: 5px;
+}
+
+/* ===== HEADER FIJO ===== */
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* ===== MAIN ===== */
+main {
+    margin-top: 160px;
+}
+
+section {
+    scroll-margin-top: 160px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #8B1A1A;
+}
+
+/* ===== BANNER ===== */
+#banner {
+    text-align: center;
+    background: linear-gradient(135deg, #8B1A1A, #A52A2A);
+    color: #fff;
+    padding: 60px 20px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+#banner p {
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #D2691E;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #E87D2A;
+}
+
+/* ===== NOSOTROS ===== */
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.contenido .texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contenido .texto p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.contenido .imagen {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contenido .imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f8f4f0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #8B1A1A;
+    margin: 10px 0;
+}
+
+/* ===== VIDEO ===== */
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== FORMULARIOS ===== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group .error {
+    color: #ff0000;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.btn-enviar {
+    background: #8B1A1A;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #A52A2A;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+footer .column {
+    min-width: 180px;
+    margin: 10px;
+}
+
+footer .column h3 {
+    color: #D2691E;
+    margin-bottom: 10px;
+}
+
+footer .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .column ul li {
+    margin: 8px 0;
+}
+
+footer .column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .column ul li a:hover {
+    color: #D2691E;
+}
+
+/* ===== BOTÓN FLOTANTE ===== */
+#btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8B1A1A;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+    z-index: 200;
+    display: none;
+}
+
+#btn-arriba:hover {
+    background: #A52A2A;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    main {
+        margin-top: 140px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    #banner h2 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer .column {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.4em;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    #banner h2 {
+        font-size: 1.4em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

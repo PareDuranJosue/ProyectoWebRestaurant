@@ -1,16 +1,228 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div></div>
-        <h2>Hola</h2>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Peruanos | Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="Css/css.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <header>
+            <div class="logo">
+                <h1>🍽️ Sabores Peruanos</h1>
+                <p>Comida tradicional peruana</p>
+            </div>
+        </header>
+        <nav>
+            <a href="#banner">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#destacados">Galería</a>
+            <a href="#sugerencias">Sugerencias</a>
+            <a href="#reclamaciones">Libro de Reclamaciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Banner -->
+        <section id="banner">
+            <h2>Bienvenidos a Sabores Peruanos</h2>
+            <p>Los mejores sabores de la cocina peruana en un solo lugar</p>
+            <a href="#destacados" class="btn">Ver Menú</a>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <div class="contenido">
+                <div class="texto">
+                    <p>Somos un restaurante familiar con más de 10 años de experiencia 
+                    en la cocina peruana. Nuestra pasión es llevar los sabores tradicionales 
+                    de Perú a tu mesa.</p>
+                    <p>Ofrecemos platos típicos como ceviche, lomo saltado, ají de gallina 
+                    y muchos más, preparados con ingredientes frescos y de calidad.</p>
+                </div>
+                <div class="imagen">
+                    <img src="Img/servicio1.jpg" alt=""/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platos Destacados -->
+        <section id="destacados">
+            <h2>Platos Destacados</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="Img/descarga.jpg" alt="Ceviche"/>
+                    
+                    <h3>Ceviche</h3>
+                    <p>Pescado fresco marinado en limón con ají y cilantro</p>
+                </div>
+                <div class="card">
+                    <img src="Img/descarga (1).jpg" alt="Lomo Saltado"/>
+                    <h3>Lomo Saltado</h3>
+                    <p>Carne salteada con cebolla, tomate y papas fritas</p>
+                </div>
+                <div class="card">
+                    <img src="Img/imagenes (1).jpg" alt="Ají de Gallina"/>
+                    <h3>Ají de Gallina</h3>
+                    <p>Pollo desmenuzado en crema de ají con nueces</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Promocional -->
+        <section id="video">
+            <h2>Conoce Nuestra Cocina</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="---------" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </section>
+
+        <!-- Sugerencias -->
+        <section id="sugerencias">
+            <h2>Formulario de Sugerencias</h2>
+            <p>Tu opinión es importante para nosotros. Ayúdanos a mejorar.</p>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo de sugerencia *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Seleccionar tipo</option>
+                        <option value="comida">Comida</option>
+                        <option value="servicio">Servicio</option>
+                        <option value="instalaciones">Instalaciones</option>
+                        <option value="precios">Precios</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Sugerencia</button>
+            </form>
+        </section>
+
+        <!-- Libro de Reclamaciones -->
+        <section id="reclamaciones">
+            <h2>📋 Libro de Reclamaciones</h2>
+            <p>Queremos conocer tu inquietud para poder solucionarla de la mejor manera.</p>
+            
+            <form>
+                <h3>Identificación del consumidor reclamante</h3>
+                <div class="form-group">
+                    <label for="nombre-rec">Nombre completo *</label>
+                    <input type="text" id="nombre-rec" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="domicilio">Domicilio *</label>
+                    <input type="text" id="domicilio" name="domicilio" required>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI/CE *</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono-rec">Teléfono *</label>
+                    <input type="tel" id="telefono-rec" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-rec">Correo electrónico *</label>
+                    <input type="email" id="email-rec" name="email" required>
+                </div>
+
+                <h3>Identificación del bien contratado</h3>
+                <div class="form-group">
+                    <label for="tipoBien">Tipo de Bien *</label>
+                    <select id="tipoBien" name="tipoBien" required>
+                        <option value="">Seleccionar tipo de bien</option>
+                        <option value="producto">Producto</option>
+                        <option value="servicio">Servicio</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="monto">Monto Reclamado</label>
+                    <input type="number" id="monto" name="monto" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción del bien</label>
+                    <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+                </div>
+
+                <h3>Detalle de la reclamación y pedido del consumidor</h3>
+                <div class="form-group">
+                    <label for="tipoReclamacion">Tipo de Reclamación *</label>
+                    <select id="tipoReclamacion" name="tipoReclamacion" required>
+                        <option value="">Seleccionar tipo de reclamación</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="queja">Queja</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="detalle">Detalle de tu reclamación *</label>
+                    <textarea id="detalle" name="detalle" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pedido">Pedido del consumidor *</label>
+                    <textarea id="pedido" name="pedido" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Reclamación</button>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        
+        <div class="column">
+            <h3>Sabores Peruanos</h3>
+            <p>Comida tradicional peruana desde 2014</p>
+        </div>
+        <div class="column">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#banner">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#destacados">Galería</a></li>
+                <li><a href="#sugerencias">Sugerencias</a></li>
+                <li><a href="#reclamaciones">Libro de Reclamaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Contacto</h3>
+            <p>📞 (01) 555-1234</p>
+            <p>📱 999-888-777</p>
+            <p>📧 info@saboresperuanos.com</p>
+        </div>
+        <div class="column">
+            <h3>Horario</h3>
+            <p>Lunes a Domingo</p>
+            <p>12:00 pm - 10:00 pm</p>
+        </div>
+    </footer>
+
+</body>
 </html>
